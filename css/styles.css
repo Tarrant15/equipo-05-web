@@ -1,0 +1,77 @@
+/* Base común de la web de equipo.
+   Cada bloque corresponde a un issue del tablero. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222222;
+}
+
+/* Issue #1 · Cabecera y menú */
+header {
+  background: #1d3557;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido */
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Issue #2 · Fichas de los miembros */
+.miembro {
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.miembro h3 {
+  margin: 0;
+}
+
+.miembro .rol {
+  margin: 0.2rem 0 0.8rem 0;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+/* Issue #3 · Pie */
+footer {
+  background: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Issue #4 · Paleta y tipografía del equipo.
+   Escribid aquí vuestros cambios de color y de tipo de letra. */
