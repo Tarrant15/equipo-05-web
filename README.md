@@ -20,3 +20,17 @@ A partir de ahí, cada persona trabaja en su rama sobre la zona de su issue.
 ## Qué no hay que cambiar
 
 Los nombres de archivo y la estructura de carpetas. En los retos siguientes se trabaja sobre esos mismos archivos, y los escenarios de conflicto están pensados para esta estructura.
+
+## Cómo trabajamos
+Para realizar las modificaciones creamos una rama para cada una de ellas y usamos un prefijo descriptivo del tipo de tarea (por ejemplo, feature/) seguido del número de la issue asignada y una descripción breve del cambio.
+
+Antes de fusionar tenemos que cambiar a la rama main, sobre la que vamos a fusionar, y realizar un pull para bajar los cambios que puedan haber en el remoto.
+
+Orden correcto de los comandos:
+```bash
+git switch main
+git pull
+git merge <nombre-de-la-rama>
+git push
+```
+Al repositorio no se deben subir archivos que no formen parte del código fuente común del proyecto, aquellos que no deban estar en el remoto, deben ignorarse a través del archivo .gitignore.
