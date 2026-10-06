@@ -25,8 +25,8 @@ body {
 }
 
 header {
-  background: var(--color-primario);
-  color: #ffffff;
+  background: #1143ff;
+  color: #ff43ff;
   padding: 1.5rem 1rem;
 }
 
