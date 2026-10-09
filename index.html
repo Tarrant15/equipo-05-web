@@ -18,6 +18,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <form action="/guardar-jugador" method="POST">
     <h2>Registro de Jugador de Fútbol</h2>
@@ -66,8 +67,38 @@
 </form>
 
   </main>
+
   <footer id="contacto">
     <p>Escríbe</p>
+    <h2>Formulario de Contacto</h2>
+
+    <form action="#" method="POST">
+        
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto">
+        </p>
+
+        <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
   </footer>
 
   <main>
